@@ -1,0 +1,76 @@
+/** common */
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img { vertical-align: middle}
+
+strong {
+  font-weight:700;
+}
+
+.Box {
+  width: 100%;
+  display: block;
+  &:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    height: 0;
+  }
+}
+
+.clear {
+  clear: both;
+}
+
+.iB, .inline-block {
+  display: inline-block;
+}
+
+hr.gray-line {
+  margin: 0;
+  border-top:1px solid $base-color-219;
+  border-bottom-width: 0;
+}
+
+.DH4 {height: 4px}
+.DH10 {height: 10px}
+.DH50 {height: 50px}
+.DH100 {height: 100px}
+.W40 { width: 40px }
+.W80 { width: 80px }
+.small {
+  font-size: 12px;
+}
+
+.v-box {
+  position: relative;
+  top:50%;
+  transform: translateY(-50%);
+  display: inline-block;
+}
+
+.pre-box {
+  white-space: pre-line;
+}
+
+.circle-radius {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.mask {
+  display: none;
+  position: fixed;
+  top:0; left: 0; right: 0; bottom:0;
+  z-index: $topmenu-zindex - 1;
+  background: rgba(0,0,0,.4);
+}
+
+.view-mb { display: none}
+@media only screen and (max-width: $medium-screen-up) {
+  .view-pc { display: none}
+  .view-mb { display: inherit}
+}

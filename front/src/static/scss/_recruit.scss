@@ -1,0 +1,75 @@
+/** recruit */
+.sub-intro-box.intro-recruit {
+  background-image:url(../images/sub/recruit-intro-bg.jpg);
+}
+/** recruit **/
+.recruit-list {
+  table {
+    border-top: 1px solid #000;
+    span {
+      display: inline-block;
+      width: 80px;
+      border-radius: 2px;
+      padding:4px 14px;
+      font-size: 12px;
+      text-align: center;
+      &.gray {
+        color: #FFF;
+        background: #aaa;
+      }
+    }
+  }
+}
+
+/** //recruit **/
+
+/** people */
+.people-view {
+  text-align: center;
+  .col {
+    padding:40px 0;
+  }
+  .photo {
+    background: url(../images/sub/dot-1px.png) repeat-x center center;
+    &.photo__left {
+      background: url(../images/sub/line-left-empty.png) no-repeat center center;
+    }
+    &.photo__right {
+      background: url(../images/sub/line-right-empty.png) no-repeat center center;
+    }
+    @media only screen and (max-width: $medium-screen-up) {
+      &,
+      &.photo__left,
+      &.photo__right {
+        background: none;
+      }
+    }
+  }
+  h5 {
+    margin: 0;
+    padding-top: 25px;
+    font-size: 25px;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+/** //people */
+
+/** welfare */
+.welfare-view {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+  h5 {
+    font-size: 25px;
+    color:#ed1940;
+  }
+  .col {
+    padding-bottom: 26px;
+  }
+}
+/** //welfare */
+
+/** //recruit */

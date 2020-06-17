@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'rp';
+  src:  url('fonts/rp.eot?qffuf0');
+  src:  url('fonts/rp.eot?qffuf0#iefix') format('embedded-opentype'),
+    url('fonts/rp.ttf?qffuf0') format('truetype'),
+    url('fonts/rp.woff?qffuf0') format('woff'),
+    url('fonts/rp.svg?qffuf0#rp') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="rp-"], [class*=" rp-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'rp' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.rp-search:before {
+  content: "\e909";
+}
+.rp-location:before {
+  content: "\e905";
+}
+.rp-time-check:before {
+  content: "\e906";
+}
+.rp-guest-add:before {
+  content: "\e907";
+}
+.rp-time:before {
+  content: "\e900";
+}
+.rp-cal:before {
+  content: "\e902";
+}
+.rp-facilities:before {
+  content: "\e904";
+}
+.rp-course:before {
+  content: "\e908";
+}
+.rp-event:before {
+  content: "\e903";
+}
+.rp-traval:before {
+  content: "\e901";
+}

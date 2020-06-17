@@ -1,0 +1,111 @@
+/** prcenter */
+.sub-intro-box.intro-prcenter {
+   background-image:url(../images/sub/prcenter-news-intro-bg.jpg);
+}
+
+/** press **/
+.press-list {
+  margin: -10px;
+  text-align: center;
+  .cell {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 290px;
+    margin: 10px auto 10px auto;
+    border: 1px solid $base-color-219;
+    text-align: left;
+    background: #fff;
+    transition: all .2s ease;
+    cursor: pointer;
+    &__photo {
+      width: 100%;
+      height:160px;
+      overflow: hidden;
+      background: url(../images/main/no-image.png) no-repeat center center;
+      img {
+        width: 100%;
+        position: relative;
+        left: 0; top: 0;
+        transition: all .5s ease;
+      }
+    }
+    &__title {
+      height: 48px;
+      padding:16px;
+      margin: 0;
+      color:$base-color-71;
+      font : {
+        size: 16px;
+        weight: 700;
+      }
+      text-align: justify;
+      overflow: hidden;
+    }
+    &__contents {
+      height: 60px;
+      padding: 0 16px;
+      font: {
+        size: 14px;
+      };
+      text-align: justify;
+      color: $base-color-117;
+      overflow: hidden;
+      .more {
+        color:#fb72b0;
+      }
+    }
+    &__date {
+      padding: 0 16px;
+      font: {
+        size: 14px;
+      };
+      color: $base-color-168;
+    }
+
+    &:hover {
+      .cell__photo img {
+        left: -5%;
+        top:-5%;
+        width: 110%;
+      }
+      .cell__title {
+        color: teal;
+      }
+    }
+  }
+}
+
+.press-view {
+  margin-top: 40px;
+  padding: 5%;
+  border: 1px solid $base-color-219;
+  &__header {
+    border-bottom: 1px solid $base-color-219;
+    h4 {
+      margin: 0;
+      font-size:20px;
+      font-weight: 700;
+    }
+    .date {
+      color: $base-color-168;
+      font-size:14px;
+    }
+  }
+  &__body {
+    padding:3% 0;
+    border-bottom: 1px solid $base-color-219;
+    img {
+      max-width: 100%;
+    }
+  }
+  &__footer {
+    padding-top: 3%;
+  }
+}
+
+/** //press **/
+
+
+
+/** //prcenter */

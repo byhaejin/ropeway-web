@@ -1,0 +1,197 @@
+/** company */
+.sub-intro-box.intro-company {
+  background-image:url(../images/sub/prcenter-news-intro-bg.jpg);
+}
+
+/** history **/
+.history-view {
+  display: block;
+  width: 100%;
+  &-cell {
+    position: relative;
+    left: -6px;
+    display: block;
+    margin-left: 50%;
+    padding: 0 0 26px 34px;
+    width: 50%;
+    background: url(../images/sub/history-dot.png) no-repeat left top;
+    &:first-child {
+      background: url(../images/sub/history-dot-first.png) no-repeat left top;
+    }
+    &:last-child {
+      background: url(../images/sub/history-dot-end.png) no-repeat left top;
+    }
+    &__contents {
+      h5 {
+        margin: 0;
+        font-size: 20px;
+        font-weight: bold;
+        color:$btn-line-color;
+      }
+      p {
+        margin:0;
+        .history-view-cell__month {
+          display: inline-block;
+          padding-right:10px;
+          font-weight: 700;
+          vertical-align: top;
+        }
+        .history-view-cell__copy {
+          display: inline-block;
+          width: calc(100% - 40px);
+        }
+      }
+    }
+
+    &:nth-child(2n) {
+      left: 7px;
+      margin: 0;
+      padding: 0 34px 26px 0;
+      text-align: right;
+      background-position: right top;
+      .history-view-cell__month {
+        float: right;
+        padding: 0 0 0 10px;
+      }
+    }
+  }
+  @media only screen and (max-width: $medium-screen-up) {
+    &-cell {
+      width: 100%;
+      margin: 0;
+      text-align: left;
+      &:nth-child(2n) {
+        left: -6px;
+        margin: 0;
+        padding: 0 0 26px 34px;
+        text-align: left;
+        background-position: left top;
+        .history-view-cell__month {
+          float: none;
+          padding: 0 10px 0 0;
+        }
+      }
+    }
+  }
+}
+
+/** //history **/
+
+/** organization */
+.organization-view {
+  text-align: center;
+  .og-top {
+    display: inline-block;
+    margin-left:28%;
+    img { max-width: 100% }
+    @media only screen and (max-width: $medium-screen-up) {
+      margin: 0;
+    }
+  }
+  .col {
+    padding: 0;
+  }
+  .line {
+    height: 40px;
+    background: url(../images/sub/dot-1px.png) repeat-y center top;
+    .top-line {
+      border-top:1px solid $base-color-168;
+    }
+    .top-line__left {
+      margin-left:50%;
+      border-top:1px solid $base-color-168;
+    }
+    .top-line__right {
+      margin-right:50%;
+      border-top:1px solid $base-color-168;
+    }
+    @media only screen and (max-width: $medium-screen-up) {
+      display: none;
+    }
+  }
+  .cell {
+    margin:0 20px 20px;
+    padding-bottom: 20px;
+    border-radius: 0 0 20px 20px;
+    background: #f1f1f1;
+    overflow: hidden;
+    h5 {
+      height: 46px;
+      line-height: 46px;
+      margin: 0;
+      font-size: 20px;
+      color: #000;
+      background: #ccc;
+      box-shadow: 0 4px 10px rgba(0,0,0,.5);
+    }
+    .og-purpose  {
+      position: relative;
+      width: 90%;
+      margin: 0 10px;
+      height: 150px;
+    }
+    .og-action {
+      position: relative;
+      height: 150px;
+      width: 90%;
+      margin: 0 10px;
+      font-size: 13px;
+    }
+  }
+}
+/** //organization */
+
+/** ci bi **/
+.ci-view {
+  max-width: 909px;
+  margin: 0 auto;
+
+  &__box img {
+    border: 2px solid #ddd;
+  }
+
+  .logo-sample {
+    max-width: 100%;
+  }
+  .ci-contents {
+    .col {
+      padding:0;
+    }
+    .ci-mean {
+      padding: 25px 0;
+      margin-right:40px;
+      border-top:1px solid $base-color-219;
+      &.addon {
+        margin: 0;
+      }
+      @media only screen and (max-width: $medium-screen-up) {
+        margin: 0;
+        border-top: 0;
+      }
+    }
+    .ci-name {
+      display: inline-block;
+      width: 90px;
+      color: #ed1940;
+    }
+  }
+}
+/** //ci bi **/
+
+/** map */
+.map-view {
+  text-align: center;
+  .map-info {
+    padding: 25px 0  40px;
+    display: inline-block;
+    text-align: left;
+  }
+
+  @media only screen and (max-width: $medium-screen-up) {
+    padding: 0 24px;
+  }
+}
+
+/** //map */
+
+/** //company */
