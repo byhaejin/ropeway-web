@@ -1,2 +1,2 @@
 # ropeway-web
-ropeway web / gulp
+sample : https://byhaejin.github.io/ropeway-web/front/dist/
